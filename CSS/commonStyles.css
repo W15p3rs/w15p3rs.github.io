@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px){
+    #logo{
+        float: center;
+        width: 100%;
+        max-width:  auto;
+        padding: 0;
+        margin:0;
+    }
+    nav{
+        float: center;
+    }
+}
+@media only screen and (min-width:1024px) {
+    nav{
+        float:right;
+    }
+    nav ul{
+        : inline;
+    }
+}
+
