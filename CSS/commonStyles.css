@@ -1,16 +1,30 @@
 @media only screen and (max-width: 1023px){
-    #logo img {
-        display: flex;
-        width: 200px;
-        max-width:  300px;
+    #logo {
         padding: 0;
         margin:0;
-        
-        
-        justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        max-width:  300px;
+        max-height: 300px;
+        width:50%;
+    }
+    #logo h3{
+        float: center;
+        margin: auto;
+        padding:0;
+    }
+    #logo img {
+        max-width:  150px;
     }
     nav{
         float: center;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        position: relative;
+        padding: 0;
+        
     }
     nav ul{
         border-radius: 1.0em;
@@ -19,12 +33,20 @@
         text-align: center;
         list-style-type: none;
         text-decoration: none;
+        width: 300px;
+        
     }
     nav ul li{
+        border: 1px solid rgba(92, 92, 92, 0.177);
+        border-radius: 1000px;
+        margin: 1px ;
         padding: 5px 10px;
         text-decoration: none;
+        
+    
     }
     nav ul li a{
+        margin:0;
         text-decoration: none;
         color: black;
     }
