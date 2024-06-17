@@ -6,28 +6,7 @@
         place-items: center;
     }
     /* This is the CSS for the logo and my name div*/
-    #logo {
-        position: relative;
-        float:center;
-        padding: 0;
-        border: 0;
-        display: block;
-        max-width:  300px;
-        max-height: 300px;
-        margin:auto;
-    }
    
-    #logo img {
-        position: relative;
-        float:center;
-        padding: 0;
-        border: 0;
-        display: block;
-        max-width:  150px;
-        max-height: 300px;
-        margin:auto;
-    }
-
 
 
     /*Nav Bar for mobile*/
