@@ -12,9 +12,9 @@ This project is a website to display my abilities and skill within website devel
 * Redux
 * Git
 * Node.js
-~Update Upon Need~
+* Bootstrap
 
-# Ideas
+# Ideas for future
 > Dark screen, outline for chain for light bulb visible, when pressed reveals the portfolio
 > Put logos of companies which i worked on pillars
 
