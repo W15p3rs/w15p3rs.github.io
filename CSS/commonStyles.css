@@ -103,14 +103,26 @@
     }
 
 
+
+    /*portfolio projects*/
+
+
+
+
+
+
+
+
+
+
     /*Footers*/
     footer{
-       margin-left: auto;
-       margin-right: auto;
-       position: relative;
-       width: 100%;
-       height:50%;
-       border-top: solid 1px rgba(92, 92, 92, 0.177);
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 100%;
+        height:100%;
+        border-top: solid 1px rgba(92, 92, 92, 0.177);
     }
     footer table {
         margin: 1% auto; /* Center the table horizontally and add a top margin */
