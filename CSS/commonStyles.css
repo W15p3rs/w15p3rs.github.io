@@ -182,7 +182,14 @@
         margin-top:-115px;
         margin-left:-100px;
     }
-    nav{
-        float:right;
-    }
+    
+/* Navbar links */
+    nav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
 }
