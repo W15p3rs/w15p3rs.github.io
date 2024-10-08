@@ -1,224 +1,285 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
-    html, body{
-        height: 100%;
-        margin: 0;
-        display: grid;
+html {
+    scroll-behavior: smooth;
+}
 
-        
-    }
-    /* This is the CSS for the logo and my name div*/
-    #logo{
-    max-width: 200px;
-    max-height:200px;
-    display: grid;
-    place-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0 10%;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: #222;
+    color: #eee;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode nav ul {
+    background-color: #444;
+}
+
+.dark-mode nav ul li a {
+    color: #ccc;
+}
+
+.dark-mode .cta-btn {
+    background-color: #28A745;
+}
+
+.dark-mode .cta-btn:hover {
+    background-color: #218838;
+}
+
+.dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .social-links a:hover {
+    color: #1da1f2;
+}
+
+/* Toggle Switch */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.switch {
     position: relative;
-    z-index: 2;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
 
-   }
-   #logolink{
-    max-width: 200px;
-    max-height:200px;
-    display: grid;
-    place-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 3;
-   }
-   #myName{
-    z-index: 1;
-   }
-   
-   /* My name CSS*/
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
-   .col-12 h3{
-    width: 100%;
-    height: 100%;
-    border:0;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    align-self: center;
-    float:right;
-    position: relative;
-    margin-bottom: 50px;
-   }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
 
-    /*Nav Bar for mobile*/
-    nav{
-        
-        margin-left:auto;
-        margin-right:auto;
-        position: relative;
-        padding: 0;
-        
-    }
-    nav ul{
-        padding: 0;
-        margin-left:auto;
-        margin-right:auto;
-        position: relative;
-        border-radius: 1.0em;
-        margin-bottom: 1em;
-        font-weight: bold;
-        text-align: center;
-        list-style-type: none;
-        text-decoration: none;
-        width: 300px;
-        
-    }
-    nav ul li{
-        margin-left:auto;
-        margin-right:auto;
-        position: relative;
-        border: 1px solid rgba(92, 92, 92, 0.177);
-        border-radius: 1000px;
-        margin: 1px ;
-        
-        text-decoration: none;
-        color:black;
-        display:flex;
-    }
-    nav ul li{
-        transition: background-color 1s;
-        
-    }
-    nav ul li:hover{
-        margin-left:auto;
-        margin-right:auto;
-        position: relative;
-        border: 1px solid rgba(92, 92, 92, 0.177);
-        border-radius: 1000px;
-        margin: 1px ;
-        
-        text-decoration: none;
-        background-color: black;
-    }
-    li a{
-        margin-left:auto;
-        margin-right:auto;
-        position: relative;
-        padding: 5px 10px;
-        width:100%;
-        height:100%;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-    }
-    li a:hover{
-        color:white;
-    }
-    /* introductory paragraph*/
-    header{
-        padding: 0;
-        margin-left: 50px;
-        margin-right: 25px;
-    
-    }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; width: 26px;
+    left: 4px; bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
 
+input:checked + .slider {
+    background-color: #007BFF;
+}
 
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
 
-    /*portfolio projects*/
-    #port_contain{
-        margin-bottom: 10px;
-    }
-    #portfolio_thumbnail{
-        height: 200px;
-        width:200px;
-        margin-left:auto;
-        margin-right: auto;
-    }
-    #text_2024{
-        margin-bottom:-17px
-    }
+.toggle-label {
+    margin-left: 10px;
+    font-size: 1em;
+    color: #333;
+}
 
+.dark-mode .toggle-label {
+    color: #eee;
+}
 
-
-
-    /*Footers*/
-    footer{
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        width: 100%;
-        height:100%;
-        border-top: solid 1px rgba(92, 92, 92, 0.177);
-    }
-    footer table {
-        margin: 1% auto; /* Center the table horizontally and add a top margin */
-        text-align: center;
-        position: relative;
-        width: fit-content; /* Ensure the table width fits its content */
-    }
-    
-    footer table tr {
-        width: 100%;
-        position: relative;
-    }
-    
-    tr td {
-        padding: 7.5px;
-        position: relative;
-        width: fit-content; /* Ensure the cell width fits its content */
-        text-align: center; /* Center the text within the cells */
-    }
-    
-    tr td a {
-        color: black;
-        text-align: center;
-        position: relative;
-        display: block; /* Ensure the link takes up the entire cell */
-        margin: 0 auto; /* Center the link within the cell */
-    }
-    
-    #copyright {
-        padding: 0;
-        
-    }
-
-
-@media only screen and (min-width:768px) {
-    #logo{
-        place-items: left;
-        width: 150px;
-        height:150px;
-        margin:0px;
-        position:static;
-        float:left;
-        
-
-    }
-    #logolink{
-        place-items: left;
-        width: 150px;
-        height:150px;
-        margin:0px;
-        position:static;
-        float:left;
-        z-index:3 ;
-        
-
-    }
-    .col-12 h3{
-        margin-top:-115px;
-        margin-left:-100px;
-    }
-    
-/* Navbar links */
-    nav a {
-    float: left;
+/* Logo Styling */
+.logo {
     display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px;
+    margin: 20px auto;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-  }
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('/Media/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    animation: slideIn 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 2;
+    position: relative;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #1da1f2; /* Example hover color */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p, a, li, span, div {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 80px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+    }
+
+    body {
+        padding: 0 5%;
+    }
 }
