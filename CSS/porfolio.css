@@ -1,0 +1,223 @@
+
+html, body{
+    height: 100%;
+    margin: 0;
+    display: grid;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+nav ul li a {
+    color: #ccc;
+}
+
+.cta-btn {
+    background-color: #28A745;
+}
+
+/* This is the CSS for the logo and my name div*/
+#logo{
+max-width: 200px;
+max-height:200px;
+display: grid;
+place-items: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+position: relative;
+}
+/* My name CSS*/
+
+.col-12 h3{
+width: 100%;
+height: 100%;
+border:0;
+padding: 0;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+align-self: center;
+float:right;
+position: relative;
+margin-bottom: 50px;
+}
+
+/*Nav Bar for mobile*/
+nav{
+    
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    padding: 0;
+    
+}
+nav ul{
+    padding: 0;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    border-radius: 1.0em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    width: 300px;
+    
+}
+nav ul li{
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    border: 1px solid rgba(92, 92, 92, 0.177);
+    border-radius: 1000px;
+    margin: 1px ;
+    
+    text-decoration: none;
+    color:black;
+    display:flex;
+}
+nav ul li{
+    transition: background-color 1s;
+    
+}
+nav ul li:hover{
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    border: 1px solid rgba(92, 92, 92, 0.177);
+    border-radius: 1000px;
+    margin: 1px ;
+    
+    text-decoration: none;
+    background-color: black;
+}
+li a{
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    padding: 5px 10px;
+    width:100%;
+    height:100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color:white;
+}
+/* introductory paragraph*/
+header{
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 25px;
+
+}
+
+
+
+/*portfolio projects*/
+#port_contain{
+    margin-bottom: 10px;
+}
+#portfolio_thumbnail{
+    height: 200px;
+    width:200px;
+    margin-left:auto;
+    margin-right: auto;
+}
+#text_2024{
+    margin-bottom:-17px
+}
+#my_portfolio_card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 5px;
+}
+
+
+
+/*Footers*/
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    height:100%;
+    border-top: solid 1px rgba(92, 92, 92, 0.177);
+}
+footer table {
+    margin: 1% auto; /* Center the table horizontally and add a top margin */
+    text-align: center;
+    position: relative;
+    width: fit-content; /* Ensure the table width fits its content */
+}
+
+footer table tr {
+    width: 100%;
+    position: relative;
+}
+
+tr td {
+    padding: 7.5px;
+    position: relative;
+    width: fit-content; /* Ensure the cell width fits its content */
+    text-align: center; /* Center the text within the cells */
+}
+
+tr td a {
+    color: black;
+    text-align: center;
+    position: relative;
+    display: block; /* Ensure the link takes up the entire cell */
+    margin: 0 auto; /* Center the link within the cell */
+}
+
+#copyright {
+    padding: 0;
+    
+}
+
+
+@media only screen and (min-width:768px) {
+#logo{
+    place-items: left;
+    width: 150px;
+    height:150px;
+    margin:0px;
+    position:static;
+    float:left;
+    
+
+}
+.col-12 h3{
+    margin-top:-115px;
+    margin-left:-100px;
+}
+
+/* Navbar links */
+nav a {
+float: left;
+display: block;
+color: #000000;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+}
+}
