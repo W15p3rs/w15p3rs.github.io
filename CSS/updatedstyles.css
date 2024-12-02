@@ -1,0 +1,87 @@
+html{
+    background-color: black;
+}
+
+body{
+    background-color: black;
+}
+#logonav nav {
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    padding: 0;
+
+}
+
+
+#logonav nav ul {
+    
+    padding: 0;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 1.0em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex; /* Use flexbox to create rows or columns */
+    flex-direction: row; /* Default for larger screens */
+    justify-content: center; /* Center items horizontally */
+    color: whitesmoke;
+    width: 1050; /* Set a max width for laptop view */
+}
+
+/* List item styles */
+nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid rgba(92, 92, 92, 0.177);
+    border-radius: 1000px;
+    border-color: whitesmoke;
+    margin: 1px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    transition: background-color 1s;
+    min-width: 1025;
+
+}
+
+nav ul li:hover {
+    background-color: white;
+}
+
+/* Anchor link styles */
+li a {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 5px 10px;
+    width: 250px;
+    min-width: 100;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li a:hover {
+    color: black;
+}
+#canvas{
+    background-color: white;
+    height: max-content;
+    border-radius: 5px;
+    margin: 0 100px 0 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+
+footer{
+    color: gray;
+}
