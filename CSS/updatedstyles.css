@@ -78,14 +78,13 @@ body{
     color: #000000;
   }
 
-
-
-
-
-
-
-
-
+.showcase{
+    display: flex;
+}
+.showcase img{
+    width: 30%;
+    border-radius: 5px;
+}
 
 
 
@@ -94,10 +93,10 @@ body{
 
 #canvas{
     background-color: white;
-    height: max-content;
-    width: 85%;
+    
+    width: 65%;
     border-radius: 5px;
-    margin: 0 100px 0 20px;
+    margin: 0 50px 0 20px;
     padding: 20px 20px 20px 20px;
 }
 
