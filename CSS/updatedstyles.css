@@ -1,22 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
 html{
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 body{
-    background-color: black;
+    margin: 0;
+    padding: 0 2%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    height: 749px;
+    background-color: #000000;
 }
-#logonav nav {
-    margin-left: auto;
-    margin-right: auto;
-    position: static;
-    padding: 0;
-
-}
-
-
-#logonav nav ul {
-    
-    padding: 0;
+#logoNav {
+    display: flex;                 /* Enables horizontal alignment */
+    align-items: center;           /* Aligns items vertically within the container */
+    justify-content: space-between; /* Ensures even spacing between the logo and nav */
+    padding: 10px 20px;            /* Adds some padding around the container */
+        /* Optional: Sets a background color */
+  }
+  
+  #logoNav .logo {
+    max-height: 75px;
+    -webkit-filter: invert(1);
+    filter: invert(1);              /* Ensures the logo doesn’t exceed a specific height */
+  }
+  
+  #logoNav nav ul {
+    padding: 0px;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -29,52 +43,59 @@ body{
     text-decoration: none;
     display: flex; /* Use flexbox to create rows or columns */
     flex-direction: row; /* Default for larger screens */
-    justify-content: center; /* Center items horizontally */
-    color: whitesmoke;
-    width: 1050; /* Set a max width for laptop view */
-}
-
-/* List item styles */
-nav ul li {
+    justify-content: center;
+  }
+  
+  #logoNav nav ul li {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    border: 1px solid rgba(92, 92, 92, 0.177);
+    border: 3px solid rgba(255, 255, 255, 0.177);
     border-radius: 1000px;
-    border-color: whitesmoke;
     margin: 1px;
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     display: flex;
-    transition: background-color 1s;
-    min-width: 1025;
-
-}
-
-nav ul li:hover {
-    background-color: white;
-}
-
-/* Anchor link styles */
-li a {
+    transition: background-color 1s;           /* Adds spacing between navigation items */
+  }
+  
+  #logoNav nav ul li a {
     margin-left: auto;
     margin-right: auto;
     position: relative;
     padding: 5px 10px;
-    width: 250px;
-    min-width: 100;
+    min-width: 75px;
     height: 100%;
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);               /* Adjusts font size */
+    transition: color 0.5s;
 }
+  #logoNav nav ul li:hover{
+    background-color: whitesmoke;
+  }
+  #logoNav nav ul li a:hover {
+    color: #000000;
+  }
 
-li a:hover {
-    color: black;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #canvas{
     background-color: white;
     height: max-content;
+    width: 85%;
     border-radius: 5px;
     margin: 0 100px 0 20px;
     padding: 20px 20px 20px 20px;
@@ -84,4 +105,10 @@ li a:hover {
 
 footer{
     color: gray;
+}
+#stars{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: -40px;
 }
