@@ -31,6 +31,10 @@
     font-size: 36px;
     margin-left: 50px;
   }
+  #contact_button{
+    border: 3px solid rgba(255, 255, 255, 0.918);
+    border-radius: 10px;
+  }
   
   #main {
     transition: margin-right .5s;
