@@ -86,18 +86,102 @@ body{
     border-radius: 5px;
 }
 
+.hero h2{
+  position: relative;
+  font-size: 20px;
+  animation: slideIn 1s ease-in-out;
+ 
+}
+
+.hero h1{
+  display: flex;
+  position: relative;
+  font-size: 45px;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right:auto;
+}
 
 
+.paragraph{
+  display:flex;
+  margin-left:auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
+
+.prjct-btn{
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000000c8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 25px;
+  width: max-content;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 50px 10px 10px 50px;
+  overflow: hidden;
+}
+.button:hover{
+  background-color: #000000;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+
+  
+}
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.button a:hover{
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
 
 
 
 #canvas{
     background-color: white;
-    
     width: 65%;
     border-radius: 5px;
     margin: 0 50px 0 20px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 
