@@ -56,7 +56,7 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: flex;
-    transition: background-color 1s;           /* Adds spacing between navigation items */
+    transition: background-color 1s;
   }
   
   #logoNav nav ul li a {
@@ -87,27 +87,74 @@ body{
 }
 
 .hero h2{
+  opacity: 0;
   position: relative;
   font-size: 20px;
-  animation: slideIn 1s ease-in-out;
- 
+  animation: slideIn 1s ease-in-out 0.5s forwards;
 }
 
 .hero h1{
+  z-index: 3;
+  opacity: 0;
   display: flex;
   position: relative;
   font-size: 45px;
   justify-content: space-around;
   margin-left: auto;
   margin-right:auto;
+  animation: slideIn2 1s ease-in-out 1s forwards;
+}
+.hero h1::after{
+  opacity: 1;
+}
+.card {
+  margin: 0 auto;
+  position: relative;
+  background-color: #F8F8F8;
+  border-radius: 1.5em;
+  min-width: 400px;
+  max-width: 1170px;
+  width: 30%;
+  padding: 2.6em 3.8em;
+}
+.note::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #F8F8F8;
+  position: absolute;
+  top: -1.8em;
+  left: 0;
+}
+.note {
+  color: #8A8A8A;
+  position: relative;
+  margin-bottom: 30px;
 }
 
-
-.paragraph{
-  display:flex;
-  margin-left:auto;
+/* Scroller styling */
+.scroller {
+  margin-left: auto;
   margin-right: auto;
-  justify-content: space-evenly;
+  height: 2.6em;
+  line-height: 2.6em;
+  position: relative;
+  overflow: hidden;
+  width: 20em;
+  text-align: center;
+}
+
+.scroller > span {
+  
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  animation: slide 5s infinite running;
+  animation-delay: 0.75s;
+  font-weight: bold;
+  font-size:1.6em;
+  
 }
 
 .prjct-btn{
@@ -115,6 +162,7 @@ body{
   justify-content: center;
 }
 .button {
+  z-index: 3;
   display: inline-block;
   border-radius: 4px;
   background-color: #000000c8;
@@ -123,10 +171,11 @@ body{
   text-align: center;
   font-size: 28px;
   padding: 25px;
+  height: 100%;
   width: max-content;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 50px 10px 10px 50px;
+  margin: 20px 10px 20px 10px;
   overflow: hidden;
 }
 .button:hover{
@@ -177,7 +226,7 @@ body{
 
 
 #canvas{
-    background-color: white;
+    background-color: #F8F8F8;
     width: 65%;
     border-radius: 5px;
     margin: 0 50px 0 20px;
@@ -189,9 +238,43 @@ body{
 footer{
     color: gray;
 }
-#stars{
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: -40px;
+
+@keyframes slide {
+  0% {
+    top: 0em;
+  }
+  25% {
+    top: -1.8em;
+  }
+  50% {
+    top: -3.6em;
+  }
+  75% {
+    top: -5.4em;
+  }
+  100%{
+    top:-7.2em;
+  }
+
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes slideIn2 {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
