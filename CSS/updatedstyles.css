@@ -151,7 +151,7 @@ body{
   text-align: center;
   position: relative;
   animation: slide 5s infinite running;
-  animation-delay: 0.75s;
+  animation-delay: 1s;
   font-weight: bold;
   font-size:1.6em;
   
@@ -234,18 +234,22 @@ body{
 }
 
 footer {
+  position: fixed;
   text-align: center;
   color: white;
   padding: 5px;
   position: relative;
-  margin: 80px 0px 0px 0px;
+  margin: 110px 0px 0px 0px;
 }
 
 footer p {
-  margin: 10px 0;
+  position: absolute;
+  margin: 10px auto;
+
 }
 
 .social-links {
+  position: static;
   list-style: none;
   padding: 0;
   display: flex;
