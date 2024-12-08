@@ -102,7 +102,7 @@ body{
   justify-content: space-around;
   margin-left: auto;
   margin-right:auto;
-  animation: slideIn2 1s ease-in-out 1s forwards;
+  animation: slideIn2 1s ease-in-out 0.75s forwards;
 }
 .hero h1::after{
   opacity: 1;
@@ -233,10 +233,37 @@ body{
     padding: 20px 20px 0px 20px;
 }
 
+footer {
+  text-align: center;
+  color: white;
+  padding: 5px;
+  position: relative;
+  margin: 80px 0px 0px 0px;
+}
 
+footer p {
+  margin: 10px 0;
+}
 
-footer{
-    color: gray;
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1da1f2; /* Example hover color */
 }
 
 @keyframes slide {
