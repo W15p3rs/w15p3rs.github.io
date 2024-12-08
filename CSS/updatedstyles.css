@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
+:root{
+  --width:30%;
+}
+
+
 html{
     background-color: black;
     scroll-behavior: smooth;
@@ -79,13 +84,16 @@ body{
   }
 
 .showcase{
-    display: flex;
+  display: flex;
 }
 .showcase img{
     width: 30%;
+    height: var(--width);
     border-radius: 5px;
 }
-
+.showcase .canvas{
+  height: var(--width);
+}
 .hero h2{
   opacity: 0;
   position: relative;
@@ -98,7 +106,7 @@ body{
   opacity: 0;
   display: flex;
   position: relative;
-  font-size: 45px;
+  font-size: 50px;
   justify-content: space-around;
   margin-left: auto;
   margin-right:auto;
@@ -225,7 +233,7 @@ body{
 
 
 
-#canvas{
+.canvas{
     background-color: #F8F8F8;
     width: 65%;
     border-radius: 5px;
@@ -243,8 +251,8 @@ footer {
 }
 
 footer p {
-  position: absolute;
-  margin: 10px auto;
+  position: relative;
+  margin: auto;
 
 }
 
