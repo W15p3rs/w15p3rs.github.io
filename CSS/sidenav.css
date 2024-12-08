@@ -41,3 +41,46 @@
     padding: 16px;
   }
   
+
+.menu {
+  cursor: pointer;
+}
+.menu svg{
+  margin-left: 40px;
+}
+
+.line {
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke: #dfdfdf;
+  transition: all 500ms;
+}
+
+#top {
+  transform-origin: 26px 40px;
+}
+
+#middle {
+  stroke-dasharray: 60 60;
+}
+
+#bottom {
+  transform-origin: 26px 60px;
+}
+
+.menuClick.line {
+  stroke: #ff7c7c;
+}
+
+.menuClick#top {
+  transform: rotate(45deg);
+}
+
+.menuClick#middle {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+}
+
+.menuClick#bottom {
+  transform: rotate(-45deg);
+}
