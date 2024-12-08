@@ -99,7 +99,7 @@ body{
   opacity: 0;
   position: relative;
   font-size: 20px;
-  animation: slideIn 1s ease-in-out 0.5s forwards;
+  animation: slideIn 1s ease-in-out 0.25s forwards;
 }
 
 .hero h1{
@@ -111,7 +111,7 @@ body{
   justify-content: space-around;
   margin-left: auto;
   margin-right:auto;
-  animation: slideIn2 1s ease-in-out 0.75s forwards;
+  animation: slideIn2 1s ease-in-out 0.5s forwards;
 }
 .hero h1::after{
   opacity: 1;
@@ -205,15 +205,15 @@ body{
   top: 0;
   right: -20px;
   transition: 0.5s;
-
-  
 }
+
 .button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
   transition: 0s
 }
+
 .button:hover span {
   padding-right: 25px;
 }
@@ -222,6 +222,7 @@ body{
   opacity: 1;
   right: 0;
 }
+
 .button a{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.938);
