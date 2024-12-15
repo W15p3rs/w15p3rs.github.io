@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
+
 :root{
   --width:30%;
 }
@@ -118,14 +119,17 @@ body{
 }
 .card {
   margin: 0 auto;
-  position: relative;
-  background-color: #F8F8F8;
+  background-color: #f8f8f800;
   border-radius: 1.5em;
-  min-width: 400px;
-  max-width: 1170px;
-  width: 30%;
+  width: 100%;
   padding: 2.6em 3.8em;
 }
+#main.card{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .note::after {
   content: '';
   width: 20%;
@@ -143,6 +147,7 @@ body{
 }
 
 /* Scroller styling */
+.card
 .scroller {
   margin-left: auto;
   margin-right: auto;
@@ -150,20 +155,21 @@ body{
   line-height: 2.6em;
   position: relative;
   overflow: hidden;
-  width: 20em;
+  width: 100%;
   text-align: center;
 }
 
 .scroller > span {
-  
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right:auto;
   text-align: center;
   position: relative;
   animation: slide 5s infinite running;
   animation-delay: 1s;
   font-weight: bold;
   font-size:1.6em;
-  
+  left:0px;
+  right:0px
 }
 
 .prjct-btn{
@@ -280,23 +286,19 @@ footer p {
   color: #1da1f2; /* Example hover color */
 }
 
-@keyframes slide {
-  0% {
-    top: 0em;
-  }
-  25% {
-    top: -1.8em;
-  }
-  50% {
-    top: -3.6em;
-  }
-  75% {
-    top: -5.4em;
-  }
-  100%{
-    top:-7.2em;
-  }
 
+
+
+@media (max-width: 768px) {
+  .scroller span{
+      text-align: left;
+      right: 75px;
+  }
+}
+@media screen and (min-width:768px) {
+  #mobilepic{
+    display: none;
+  }
 }
 
 @keyframes slideIn {
@@ -318,4 +320,23 @@ footer p {
       transform: translateY(0);
       opacity: 1;
   }
-}
+  }
+  @keyframes slide {
+    0% {
+      top: 0em;
+    }
+    25% {
+      top: -1.8em;
+    }
+    50% {
+      top: -3.6em;
+    }
+    75% {
+      top: -5.4em;
+    }
+    100%{
+      top:-7.2em;
+    }
+  
+  }
+
