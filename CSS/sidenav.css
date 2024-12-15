@@ -29,7 +29,6 @@
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
   }
   #contact_button{
     border: 3px solid rgba(255, 255, 255, 0.918);
@@ -42,12 +41,7 @@
   }
   
 
-.menu {
-  cursor: pointer;
-}
-.menu svg{
-  margin-left: 40px;
-}
+
 
 .line {
   stroke-width: 3;
@@ -69,7 +63,7 @@
 }
 
 .menuClick.line {
-  stroke: #ff7c7c;
+  stroke: #fc3333;
 }
 
 .menuClick#top {
@@ -84,3 +78,28 @@
 .menuClick#bottom {
   transform: rotate(-45deg);
 }
+
+
+  .menu {
+    margin-right: -30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Ensure the menu has a defined size */
+    height: 50px;
+  }
+  
+  .menu svg {
+    width: 100%; /* Make the SVG scale with the container */
+    height: 100%;
+    margin: 0; /* Reset any default margin */
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+  .sidenav{
+    background-color: rgba(0, 0, 0, 0.922);
+    z-index: 4;
+  }
+  }
