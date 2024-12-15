@@ -185,6 +185,7 @@ nav ul li {
     color: black;
     display: flex;
     transition: background-color 1s;
+    width: 100%;
     min-width: 1025;
 }
 
@@ -198,8 +199,8 @@ li a {
     margin-right: auto;
     position: relative;
     padding: 5px 10px;
-    width: 250px;
-    min-width: 100;
+    width: 100%;
+    min-width: 100px;
     height: 100%;
     text-align: center;
     text-decoration: none;
@@ -299,6 +300,7 @@ tr td a {
         nav ul li {
             width: 100%; /* Each list item takes up full width in column layout */
         }
+
     
     
 
