@@ -81,7 +81,8 @@
 
 
   .menu {
-    margin-right: -30px;
+    position: fixed;
+    right:10px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -91,9 +92,10 @@
   }
   
   .menu svg {
+    position: fixed;
     width: 100%; /* Make the SVG scale with the container */
     height: 100%;
-    margin: 0; /* Reset any default margin */
+    margin: 0; 
     position: relative;
   }
 
