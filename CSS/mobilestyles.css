@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+  body{
+    padding: 0 10px 0 0;
+  }
+  .showcase{
+    justify-content: center;
+    padding: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .canvas {
+    left: auto;
+    right:auto;
+    height:100%;
+    width: 100%;
+    margin: 0 auto; /* Centers horizontally */
+    display: flex; /* Ensures proper centering */
+    flex-direction: column; /* Optional for column alignment */
+    align-items: center; /* Centers content within flex container */
+  }
+
+  .card {
+    padding: 0px;
+  }
+
+  #mobilepic{
+    float: right;
+    margin: -50px 0 0 0;
+    border-radius: 50px;
+  }
+
+  #laptoppic{
+    display: none;
+  }
+
+  #main.canvas {
+    margin: 0px;
+  }
+}
