@@ -1,0 +1,107 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #1111119d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(199, 199, 199);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  #contact_button{
+    border: 3px solid rgba(255, 255, 255, 0.918);
+    border-radius: 10px;
+  }
+  
+  #main {
+    transition: margin-right .5s;
+    padding: 16px;
+  }
+  
+
+
+
+.line {
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke: #dfdfdf;
+  transition: all 500ms;
+}
+
+#top {
+  transform-origin: 26px 40px;
+}
+
+#middle {
+  stroke-dasharray: 60 60;
+}
+
+#bottom {
+  transform-origin: 26px 60px;
+}
+
+.menuClick.line {
+  stroke: #fc3333;
+}
+
+.menuClick#top {
+  transform: rotate(45deg);
+}
+
+.menuClick#middle {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+}
+
+.menuClick#bottom {
+  transform: rotate(-45deg);
+}
+
+
+  .menu {
+    position: fixed;
+    right:10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Ensure the menu has a defined size */
+    height: 50px;
+  }
+  
+  .menu svg {
+    position: fixed;
+    width: 100%; /* Make the SVG scale with the container */
+    height: 100%;
+    margin: 0; 
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+  .sidenav{
+    background-color: rgba(0, 0, 0, 0.922);
+    z-index: 4;
+  }
+  }

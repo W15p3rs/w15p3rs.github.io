@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+
+:root{
+  --width:30%;
+}
+
+
+html{
+  overflow: hidden;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+body{
+  height: 100%;
+    margin: 0;
+    padding: 0 2%;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    height: 749px;
+    background-color: #000000;
+}
+#logoNav {
+    display: flex;                 /* Enables horizontal alignment */
+    align-items: center;           /* Aligns items vertically within the container */
+    justify-content: space-between; /* Ensures even spacing between the logo and nav */
+    padding: 10px 20px;            /* Adds some padding around the container */
+        /* Optional: Sets a background color */
+  }
+  
+  #logoNav .logo {
+    max-height: 75px;
+    -webkit-filter: invert(1);
+    filter: invert(1);              /* Ensures the logo doesn’t exceed a specific height */
+  }
+  
+  #logoNav nav ul {
+    padding: 0px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 1.0em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex; /* Use flexbox to create rows or columns */
+    flex-direction: row; /* Default for larger screens */
+    justify-content: center;
+  }
+  
+  #logoNav nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.177);
+    border-radius: 1000px;
+    margin: 1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    transition: background-color 1s;
+  }
+  
+  #logoNav nav ul li a {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 5px 10px;
+    min-width: 75px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);               /* Adjusts font size */
+    transition: color 0.5s;
+}
+  #logoNav nav ul li:hover{
+    background-color: whitesmoke;
+  }
+  #logoNav nav ul li a:hover {
+    color: #000000;
+  }
+
+.showcase{
+  display: flex;
+}
+.showcase img{
+    width: 30%;
+    height: var(--width);
+    border-radius: 5px;
+}
+.showcase .canvas{
+  height: var(--width);
+}
+.hero h2{
+  opacity: 0;
+  position: relative;
+  font-size: 20px;
+  animation: slideIn 1s ease-in-out 0.25s forwards;
+}
+
+.hero h1{
+  z-index: 3;
+  opacity: 0;
+  display: flex;
+  position: relative;
+  font-size: 50px;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right:auto;
+  animation: slideIn2 1s ease-in-out 0.5s forwards;
+}
+.hero h1::after{
+  opacity: 1;
+}
+.card {
+  margin: 0 auto;
+  background-color: #f8f8f800;
+  border-radius: 1.5em;
+  width: 100%;
+  padding: 2.6em 3.8em;
+}
+#main.card{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.note::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #F8F8F8;
+  position: absolute;
+  top: -1.8em;
+  left: 0;
+}
+.note {
+  color: #8A8A8A;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Scroller styling */
+.card
+.scroller {
+  margin-left: auto;
+  margin-right: auto;
+  height: 2.6em;
+  line-height: 2.6em;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.scroller > span {
+  margin-left: auto;
+  margin-right:auto;
+  text-align: center;
+  position: relative;
+  animation: slide 5s infinite running;
+  animation-delay: 1s;
+  font-weight: bold;
+  font-size:1.6em;
+  left:0px;
+  right:0px
+}
+
+.prjct-btn{
+  display: flex;
+  justify-content: center;
+  padding: 0 0 20px 0;
+}
+.button {
+  z-index: 3;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000000c8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 25px;
+  height: 100%;
+  width: max-content;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px 10px 20px 10px;
+  overflow: hidden;
+}
+.button:hover{
+  background-color: #000000;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.button a:hover{
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+
+
+.canvas{
+    background-color: #F8F8F8;
+    width: 65%;
+    border-radius: 5px;
+    margin: 0 50px 0 20px;
+    padding: 20px 20px 0px 20px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: auto;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1da1f2; /* Example hover color */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .scroller span{
+      text-align: left;
+      right: 75px;
+  }
+}
+@media screen and (min-width:768px) {
+  #mobilepic{
+    display: none;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes slideIn2 {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  }
+  @keyframes slide {
+    0% {
+      top: 0em;
+    }
+    25% {
+      top: -1.8em;
+    }
+    50% {
+      top: -3.6em;
+    }
+    75% {
+      top: -5.4em;
+    }
+    100%{
+      top:-7.2em;
+    }
+  
+  }
+
