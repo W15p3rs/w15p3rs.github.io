@@ -89,6 +89,8 @@
     align-items: center;
     width: 50px; /* Ensure the menu has a defined size */
     height: 50px;
+    background-color: rgba(0, 0, 0, 0.903);
+    border-radius: 5px;
   }
   
   .menu svg {

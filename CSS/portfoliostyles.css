@@ -1,84 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-
-html{
-    overflow: visible;
-    height: 100%;
-    margin: auto;   
-    scroll-behavior: smooth ;
-}
-body{
-    background-color: black;
-}
-.under-container{
-    margin: 0 auto;
-    max-height: 200px;
-    min-width: none;
-    justify-content: center;
-    padding: 10px 10px;
-}
-/*portfolio projects*/
-#port_contain{
-    margin-bottom: 10px;
-    padding-bottom:20px ;
-}
-#weatherpage_thumbnail{
-    max-height: 200px;
-    width: auto;
-    margin-left:auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-#portfolio_thumbnail{
-    max-height: 200px;
-    width:auto;
-    margin-left:auto;
-    margin-right: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#text_2024{
-    margin-bottom:-17px;
-    color:aliceblue;
-}
-#my_portfolio_card{
-    padding:10px;
-    margin: 20px 0;
-    background-color: aliceblue;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.807), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-/* Add this to your CSS file */
-.card {
-    opacity: 0; /* Hidden by default */
-    transform: translateY(50px); /* Slightly shifted */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.card.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Reset to normal position */
-}
-
-footer{
-position: absolute;
-bottom: -500px;
-}
-
-@media screen and (max-width:768px) {
-    #portfolio_thumbnail{
-        width: 250px;
-        margin-left:auto;
-        margin-right: auto;
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    html{
+        overflow: visible;
+        height: 100%;
+        margin: auto;   
+        scroll-behavior: smooth ;
+    }
+    body{
+        background-color: black;
+    }
+    #title{
+        margin: 0 auto;
+        text-align: center;
+    }
+    #title h1{
+        font-family: "Bebas Neue", sans-serif;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .under-container{
+        z-index: 0;
+        background-color: black;
+        margin: 0 auto;
+        max-height: 200px;
+        min-width: none;
+        justify-content: center;
+        padding: 10px 10px;
+    }
+    /*portfolio projects*/
+    #port_contain{
+        margin-bottom: 10px;
+        padding-bottom:20px ;
     }
     #weatherpage_thumbnail{
-        width: 250px;
-        height: auto;
+        max-height: 200px;
+        width: auto;
         margin-left:auto;
         margin-right: auto;
+        border-radius: 10px;
     }
-    footer{
-        position: absolute;
-        bottom: -900px;
-        padding: 0 0 20px 0;
+    #portfolio_thumbnail{
+        max-height: 200px;
+        width:auto;
+        margin-left:auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
+    #text_2024{
+        margin-bottom:-17px;
+        color:aliceblue;
+    }
+    #my_portfolio_card{
+        padding:10px;
+        margin: 50px 0;
+        background-color: aliceblue;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.807), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    /* Add this to your CSS file */
+    .card {
+        opacity: 0; /* Hidden by default */
+        transform: translateY(50px); /* Slightly shifted */
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .card.visible {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Reset to normal position */
+    }
+footer{
+    z-index: -2;
 }
+
+
+
+
+    @media screen and (max-width:768px) {
+        #title{
+            right:30px;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #portfolio_thumbnail{
+            width: 250px;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        #weatherpage_thumbnail{
+            width: 250px;
+            height: auto;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        footer{
+            position: absolute;
+            bottom: -900px;
+            padding: 0 0 20px 0;
+        }
+    }
