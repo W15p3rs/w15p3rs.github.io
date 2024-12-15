@@ -77,8 +77,6 @@ bottom: -500px;
         margin-right: auto;
     }
     footer{
-        position: absolute;
-        bottom: -900px;
         padding: 0 0 20px 0;
     }
 }
