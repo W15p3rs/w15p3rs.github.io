@@ -7,7 +7,9 @@
         scroll-behavior: smooth ;
     }
     body{
+        z-index: 0;
         background-color: black;
+        height: 200%;
     }
     #title{
         margin: 0 auto;
@@ -70,10 +72,6 @@
         opacity: 1; /* Fully visible */
         transform: translateY(0); /* Reset to normal position */
     }
-footer{
-    z-index: -2;
-}
-
 
 
 
@@ -94,10 +92,5 @@ footer{
             height: auto;
             margin-left:auto;
             margin-right: auto;
-        }
-        footer{
-            position: absolute;
-            bottom: -900px;
-            padding: 0 0 20px 0;
         }
     }
