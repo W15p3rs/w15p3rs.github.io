@@ -37,4 +37,7 @@
   #main.canvas {
     margin: 0px;
   }
+  footer{
+    bottom: 50px;
+  }
 }
