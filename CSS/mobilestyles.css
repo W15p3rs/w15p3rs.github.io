@@ -38,6 +38,7 @@
     margin: 0px;
   }
   footer{
-    bottom: 50px;
+    position: absolute;
+    bottom: 0;
   }
 }
