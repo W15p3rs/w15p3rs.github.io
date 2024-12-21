@@ -250,7 +250,6 @@ body{
     width: 65%;
     border-radius: 5px;
     margin: 0 50px 0 20px;
-    padding: 20px 20px 0px 20px;
 }
 
 #footer {
@@ -294,6 +293,12 @@ body{
 
 
 @media (max-width: 768px) {
+  html{
+    width: 100%;
+  }
+  #logoNav{
+    padding: 0;
+  }
   .scroller span{
       text-align: left;
       right: 75px;

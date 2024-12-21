@@ -91,9 +91,15 @@
     @media screen and (max-width:768px) {
         #title{
             right:30px;
-            position: relative;
+            position: sticky;
             margin: 0 auto;
             text-align: center;
+        }
+        #title h1{
+            font-family: "Bebas Neue", sans-serif;
+            color: white;
+            text-align: center;
+            text-decoration: underline;
         }
         #portfolio_thumbnail{
             width: 250px;
