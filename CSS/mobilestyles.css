@@ -21,7 +21,11 @@
   .card {
     padding: 0px;
   }
-
+  .hero h1{
+    font-size: 50px;
+    margin: auto auto 50px;
+    z-index:1; 
+  }
   #mobilepic{
     float: right;
     margin: -50px 0 0 0;
@@ -35,7 +39,7 @@
   #main.canvas {
     margin: 0px;
     padding: 0 auto;  }
-  footer{
+  #footer{
     position: absolute;
     bottom: 0;
   }

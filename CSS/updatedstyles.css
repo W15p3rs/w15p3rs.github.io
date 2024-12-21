@@ -111,11 +111,11 @@ body{
   opacity: 0;
   display: flex;
   position: relative;
-  font-size: 50px;
+  font-size: 60px;
   justify-content: space-around;
-  margin-left: auto;
-  margin-right:auto;
+  margin: 0 auto 50px;
   animation: slideIn2 1s ease-in-out 0.5s forwards;
+
 }
 .hero h1::after{
   opacity: 1;
@@ -249,7 +249,7 @@ body{
     background-color: #F8F8F8;
     width: 65%;
     border-radius: 5px;
-    margin: 0 50px 0 20px;
+    margin: 0 50px 50px 20px;
 }
 
 #footer {
