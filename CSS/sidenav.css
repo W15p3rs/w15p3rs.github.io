@@ -5,7 +5,7 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #1111119d;
+    background-color: rgba(17, 17, 17, 0.62);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -81,8 +81,9 @@
 
 
   .menu {
-    position: fixed;
-    right:10px;
+    position: sticky;
+    top: 10px;
+    right: -25px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -94,7 +95,9 @@
   }
   
   .menu svg {
-    position: fixed;
+    top: 10px;
+    right:-25px;
+    position: sticky;
     width: 100%; /* Make the SVG scale with the container */
     height: 100%;
     margin: 0; 
