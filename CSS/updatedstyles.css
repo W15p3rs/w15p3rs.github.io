@@ -23,11 +23,14 @@ body{
     background-color: #000000;
 }
 #logoNav {
+  width: 100%;
+    background-color: #000000;
+    position: sticky;
     display: flex;                 /* Enables horizontal alignment */
     align-items: center;           /* Aligns items vertically within the container */
     justify-content: space-between; /* Ensures even spacing between the logo and nav */
     padding: 10px 20px;            /* Adds some padding around the container */
-        /* Optional: Sets a background color */
+    z-index: 2;
   }
   
   #logoNav .logo {
@@ -251,7 +254,7 @@ body{
 }
 
 #footer {
-  margin-top: 100px;
+  margin-top: 1px;
   left: 0;
   bottom: 0;
   width: 100%;
