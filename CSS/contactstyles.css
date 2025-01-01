@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Body styling */
+html{
+    overflow: visible;
+    height: 100%;
+    margin: auto;   
+    scroll-behavior: smooth ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    
+}
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Container for the contact form */
+.contact-container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #00000042;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    
+}
+.contact-container iframe{
+    margin: 0 auto;
+    width: 100%;
+    height: 900px;
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.xpWfed{
+    display: none !important;; 
+    
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 15px;
+    }
+
+    .contact-container h2 {
+        font-size: 20px;
+    }
+
+    .contact-container button[type="submit"] {
+        width: 100%;
+    }
+}

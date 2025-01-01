@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
+        .thank-you-container {
+            text-align: center;
+            background: white;
+            padding: 50px 50px 10px 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(254, 252, 252);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>Your submission has been received.</p>
+        <p>We will get back to you shortly.</p>
+        <p>You will be redirected in <div id="countdown"> </div></p>
+        
+    </div>
+    <script>
+        let countdownElement = document.getElementById('countdown');
+        let countdownTime = 5;
+
+        let countdownInterval = setInterval(() => {
+            countdownElement.textContent = countdownTime;
+            countdownTime--;
+
+            if (countdownTime < 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
