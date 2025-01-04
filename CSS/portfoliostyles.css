@@ -11,16 +11,6 @@
         background-color: black;
 
     }
-    #title{
-        margin: 0 auto;
-        text-align: center;
-    }
-    #title h1{
-        font-family: "Bebas Neue", sans-serif;
-        color: white;
-        text-align: center;
-        text-decoration: underline;
-    }
     #logoNav {
         width: 100%;
         background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.881) 100%);
@@ -31,7 +21,88 @@
         justify-content: space-between; /* Ensures even spacing between the logo and nav */
         padding: 10px 20px;            /* Adds some padding around the container */
         z-index: 2;
-    }
+      }
+      #title{
+        margin: 0 auto;
+        text-align: center;
+      }
+      #title h1{
+        font-family: "Bebas Neue", sans-serif;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+      }
+      
+      #logoNav {
+        width: 100%;
+          background-color: #000000;
+          position: sticky;
+          display: flex;                 /* Enables horizontal alignment */
+          align-items: center;           /* Aligns items vertically within the container */
+          justify-content: space-between; /* Ensures even spacing between the logo and nav */
+          padding: 10px 20px;            /* Adds some padding around the container */
+          z-index: 2;
+        }
+        
+        #logoNav .logo {
+          max-height: 75px;
+          -webkit-filter: invert(1);
+          filter: invert(1);              /* Ensures the logo doesn’t exceed a specific height */
+        }
+        #logoNav h1{
+          margin-right: 70px;
+          align-items: center;
+        }
+        
+        #logoNav nav ul {
+          padding: 0px;
+          height: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          border-radius: 1.0em;
+          margin-bottom: 1em;
+          font-weight: bold;
+          text-align: center;
+          list-style-type: none;
+          text-decoration: none;
+          display: flex; /* Use flexbox to create rows or columns */
+          flex-direction: row; /* Default for larger screens */
+          justify-content: center;
+        }
+        
+        #logoNav nav ul li {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          border: 3px solid rgba(255, 255, 255, 0.177);
+          border-radius: 1000px;
+          margin: 1px;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          display: flex;
+          transition: background-color 1s;
+        }
+        
+        #logoNav nav ul li a {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          padding: 5px 10px;
+          min-width: 75px;
+          height: 100%;
+          text-align: center;
+          text-decoration: none;
+          color: rgb(255, 255, 255);               /* Adjusts font size */
+          transition: color 0.5s;
+      }
+        #logoNav nav ul li:hover{
+          background-color: whitesmoke;
+        }
+        #logoNav nav ul li a:hover {
+          color: #000000;
+        }
+      
     .under-container{
         top: 50px;
         left: 200px;

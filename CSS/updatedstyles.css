@@ -24,6 +24,28 @@ body{
 
 #logoNav {
   width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.881) 100%);
+  top:0   ;
+  position: sticky;
+  display: flex;                 /* Enables horizontal alignment */
+  align-items: center;           /* Aligns items vertically within the container */
+  justify-content: space-between; /* Ensures even spacing between the logo and nav */
+  padding: 10px 20px;            /* Adds some padding around the container */
+  z-index: 2;
+}
+#title{
+  margin: 0 auto;
+  text-align: center;
+}
+#title h1{
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#logoNav {
+  width: 100%;
     background-color: #000000;
     position: sticky;
     display: flex;                 /* Enables horizontal alignment */
@@ -257,7 +279,8 @@ body{
 }
 
 #footer {
-  margin-top: 1px;
+  position: static;
+  margin-top: 20px;
   left: 0;
   bottom: 0;
   width: 100%;
