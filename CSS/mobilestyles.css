@@ -45,3 +45,18 @@
     bottom: 0;
   }
 }
+
+.menu {
+  position: fixed !important; /* Change from sticky to fixed */
+  top: 10px !important;
+  right: 0px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 5px !important;
+  z-index: 4 !important;
+}

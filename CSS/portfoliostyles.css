@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     html{
         overflow: visible;
@@ -86,7 +86,20 @@
         transform: translateY(0); /* Reset to normal position */
     }
 
-
+    .menu {
+        position: fixed !important; /* Change from sticky to fixed */
+        top: 10px !important;
+        right: 0px !important;
+        cursor: pointer !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 50px !important;
+        height: 50px !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+        border-radius: 5px !important;
+        z-index: 4 !important;
+    }
 
     @media screen and (max-width:768px) {
         #title{

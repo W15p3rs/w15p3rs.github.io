@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
 
@@ -38,6 +37,10 @@ body{
     max-height: 75px;
     -webkit-filter: invert(1);
     filter: invert(1);              /* Ensures the logo doesn’t exceed a specific height */
+  }
+  #logoNav h1{
+    margin-right: 70px;
+    align-items: center;
   }
   
   #logoNav nav ul {
@@ -290,8 +293,20 @@ body{
   color: #1da1f2; /* Example hover color */
 }
 
-
-
+.menu {
+  position: fixed !important; /* Change from sticky to fixed */
+  top: 10px !important;
+  right: 0px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 5px !important;
+  z-index: 4 !important;
+}
 
 @media (max-width: 768px) {
   html{

@@ -81,25 +81,25 @@
 
 
   .menu {
-    position: sticky;
-    top: 10px;
-    right: 0px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px; /* Ensure the menu has a defined size */
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    z-index: 4;
+    position: fixed !important; /* Change from sticky to fixed */
+    top: 10px !important;
+    right: 0px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 50px !important; /* Ensure the menu has a defined size */
+    height: 50px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 5px !important;
+    z-index: 4 !important;
     }
 
   .menu svg {
-    width: 50px; /* Match the width of the menu */
-    height: 50px; /* Match the height of the menu */
-    margin: 0;
-    position: relative;
+    width: 50px !important; /* Match the width of the menu */
+    height: 50px !important; /* Match the height of the menu */
+    margin: 0 !important;
+    position: relative !important;
   }
 
   @media screen and (max-width: 768px) {
