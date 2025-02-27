@@ -1,6 +1,6 @@
 function placeDiv(element, startPosition) {
     let j = 0; // Start movement offset
-    const speed = 3; // Pixels per frame
+    const speed = 2; // Pixels per frame
     const maxOffset = window.screen.width; // Reset after 1000px to prevent overflow
     let running = true; // Control animation state
     var x = startPosition;
