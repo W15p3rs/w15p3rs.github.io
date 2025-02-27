@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html, body {
-    overflow: visible;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     overflow-x: hidden;
+    overflow: hidden;
     
 
 }
@@ -90,27 +90,39 @@ html, body {
 #logoNav nav ul li a:hover {
     color: #000000;
 }
-/*
-    .scroll-container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-    }
 
-    .scroll-content {
-      display: flex;
+#bar1{
+    left: 0;
+    position: absolute;
+    height: 1000px;
+    width: 15%;
+    z-index: 4;
+    background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgba(0,0,0) 80%, rgba(0, 0, 0, 0) 100%);
+}
 
-    }
+#bar2{
+    right: 0;
+    position: absolute;
+    height: 1000px;
+    width: 15%;
+    z-index: 4;
+    background: linear-gradient(90deg, rgb(0,0,0,0), rgba(0,0,0) 20%, rgb(0, 0, 0) 100%);
+}
 
-    .scroll-content img {
-      width: 144px;  Adjust image width 
+.scroll-container {
+    margin-top: 200px;
+}
+
+.scroll-content {
+    display: flex;
+}
+
+.scroll-content img {
+    width: 144px;
       height: auto;
       margin: 0 10px;
     }
-*/
+
 
     @keyframes scroll {
       0% {
