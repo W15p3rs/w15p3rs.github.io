@@ -31,8 +31,5 @@ function placeDiv(element, startPosition) {
     animate();
 
     // Add event listener to toggle animation (pause/resume on click)
-    document.addEventListener('click', function () {
-        running = !running; // Toggle state
-        if (running) animate(); // Resume if unpaused
-    });
+
 }
