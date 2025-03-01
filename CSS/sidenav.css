@@ -1,7 +1,7 @@
 .sidenav {
     height: 100%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
@@ -81,7 +81,7 @@
 
 
   .menu {
-    position: fixed !important; /* Change from sticky to fixed */
+    position: absolute !important; /* Change from sticky to fixed */
     top: 10px !important;
     right: 0px !important;
     cursor: pointer !important;
@@ -99,7 +99,7 @@
     width: 50px !important; /* Match the width of the menu */
     height: 50px !important; /* Match the height of the menu */
     margin: 0 !important;
-    position: relative !important;
+    position: absolute !important;
   }
 
   @media screen and (max-width: 768px) {

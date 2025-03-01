@@ -3,7 +3,7 @@
 /* Global Styles */
 html, body {
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden; /* Corrected this line */
+    overflow-x: hidden;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -35,7 +35,6 @@ html, body {
 }
 
 #title h1 {
-    
     font-family: "Bebas Neue", sans-serif;
     color: white;
     text-decoration: underline;
@@ -73,10 +72,10 @@ html, body {
     color: black;
 }
 
-
+/* Side Bars */
 #bar1, #bar2 {
     position: absolute;
-    height: 100vh; /* Use viewport height instead of fixed height */
+    height: 100vh;
     width: 15%;
     z-index: 1;
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0,0,0) 80%, rgba(0, 0, 0, 0) 100%);
@@ -86,31 +85,33 @@ html, body {
     right: 0;
     background: linear-gradient(90deg, rgb(0,0,0,0), rgba(0,0,0) 20%, rgb(0, 0, 0) 100%);
 }
-#scrollTitle{
-    font-family: "Bebas Neue", sans-serif;
-    color: white;
-    text-decoration: underline;
-}
+
 /* Scroll Container */
 .scroll-container {
     display: flex;
-    margin-top: 100px;
-    overflow: hidden; /* Prevent horizontal overflow */
-    width: 100%; /* Ensure it fits within the viewport */
+    justify-content: center;
+    align-items: center;
+    margin-top: -250px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
 }
 
 .scroll-content {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap;
+    margin-top: 30px;
 }
 
 #scrollTitle {
-    display: flex;
-    margin: 200px auto 100px auto;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
 }
 
 .scroll-content img {
-    width: 10vw;
+    width: 144px;
     height: auto;
     margin: 0 10px;
     z-index: 0;
@@ -144,44 +145,21 @@ html, body {
     }
 }
 
-/* Media Queries 
+/* Media Queries*/ 
 @media screen and (max-width: 768px) {
-    #title {
-        position: fixed;
-        top: 10px; 
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        width: 100%; 
-        z-index: 3; 
+    body{
+        width: 100%;
     }
-    #portfolio_thumbnail, #weatherpage_thumbnail {
-        width: 250px;
-        margin-left: auto;
-        margin-right: auto;
+    #bar1, #bar2{
+        width: 10%;
+    } 
+    .scroll-content{
+        width: 60%;
     }
-
-    #my_portfolio_card {
-        padding: 10px;
-        margin: 50px 0;
-        background-color: aliceblue;
-        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.807), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .under-container {
-        position: static;
-        z-index: 0;
-        background-color: black;
-        margin: 0 auto;
-        max-height: 200px;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    #scrollTitle {
-        width: 144px;
-        height: auto;
+    .scroll-content img{
+        width: 48px;
         margin: 0;
+        padding: 0;
     }
+    
 }
-*/
