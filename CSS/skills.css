@@ -7,6 +7,7 @@ html, body {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    width: 70%;
 }
 
 /* Navigation Bar */
@@ -123,27 +124,6 @@ html, body {
     bottom: 0;
 }
 
-/* Keyframes */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-50%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 /* Media Queries*/ 
 @media screen and (max-width: 768px) {
@@ -152,14 +132,27 @@ html, body {
     }
     #bar1, #bar2{
         width: 10%;
+        padding: 0;
+        margin: 0;
     } 
     .scroll-content{
         width: 60%;
+        overflow: hidden;
     }
     .scroll-content img{
         width: 48px;
         margin: 0;
         padding: 0;
+        overflow: hidden;
+    }
+    .menu{
+        position: absolute !important;
+    }
+    .sidenav{
+        position: absolute !important;
+    }
+    .sidnav a{
+        position: absolute;
     }
     
 }
