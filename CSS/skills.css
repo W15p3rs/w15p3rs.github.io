@@ -1,200 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Bebas+Neue&display=swap');
+
+/* Global Styles */
 html, body {
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Corrected this line */
     overflow: hidden;
-    
-
+    margin: 0;
+    padding: 0;
 }
+
+/* Navigation Bar */
 #logoNav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.881) 100%);
-    background-color: #000000;
     top: 0;
-    display: flex;                 /* Enables horizontal alignment */
-    align-items: center;           /* Aligns items vertically within the container */
-    justify-content: space-between; /* Ensures even spacing between the logo and nav */
-    padding: 10px 20px;            /* Adds some padding around the container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
     z-index: 2;
 }
-#title{
+
+#logoNav .logo {
+    z-index: 2;
+    max-height: 75px;
+    filter: invert(1);
+}
+
+#title {
+    z-index: 2;
     margin: 0 auto;
     text-align: center;
 }
-#title h1{
-    padding-right:60px;
+
+#title h1 {
+    
     font-family: "Bebas Neue", sans-serif;
     color: white;
-    text-align: center;
     text-decoration: underline;
 }
-    
-#logoNav .logo {
-    max-height: 75px;
-    -webkit-filter: invert(1);
-    filter: invert(1);              /* Ensures the logo doesn’t exceed a specific height */
-}
-#logoNav h1{
-    margin-right: 70px;
-    align-items: center;
-}
-    
+
 #logoNav nav ul {
-    padding: 0px;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    border-radius: 1.0em;
-    margin-bottom: 1em;
-    font-weight: bold;
-    text-align: center;
+    padding: 0;
     list-style-type: none;
-    text-decoration: none;
-    display: flex; /* Use flexbox to create rows or columns */
-    flex-direction: row; /* Default for larger screens */
+    display: flex;
     justify-content: center;
+    margin: 0;
 }
-    
+
 #logoNav nav ul li {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
     border: 3px solid rgba(255, 255, 255, 0.177);
     border-radius: 1000px;
     margin: 1px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: flex;
     transition: background-color 1s;
 }
-    
+
 #logoNav nav ul li a {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
     padding: 5px 10px;
     min-width: 75px;
-    height: 100%;
     text-align: center;
     text-decoration: none;
-    color: rgb(255, 255, 255);               /* Adjusts font size */
+    color: white;
     transition: color 0.5s;
 }
-#logoNav nav ul li:hover{
+
+#logoNav nav ul li:hover {
     background-color: whitesmoke;
 }
+
 #logoNav nav ul li a:hover {
-    color: #000000;
+    color: black;
 }
 
-#bar1{
-    left: 0;
+
+#bar1, #bar2 {
     position: absolute;
-    height: 1000px;
+    height: 100vh; /* Use viewport height instead of fixed height */
     width: 15%;
-    z-index: 2;
-    background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgba(0,0,0) 80%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0,0,0) 80%, rgba(0, 0, 0, 0) 100%);
 }
 
-#bar2{
+#bar2 {
     right: 0;
-    position: absolute;
-    height: 1000px;
-    width: 15%;
-    z-index: 2;
     background: linear-gradient(90deg, rgb(0,0,0,0), rgba(0,0,0) 20%, rgb(0, 0, 0) 100%);
 }
-
+#scrollTitle{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+/* Scroll Container */
 .scroll-container {
-    margin-top: 200px;
+    display: flex;
+    margin-top: 100px;
+    overflow: hidden; /* Prevent horizontal overflow */
+    width: 100%; /* Ensure it fits within the viewport */
 }
 
 .scroll-content {
     display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+#scrollTitle {
+    display: flex;
+    margin: 200px auto 100px auto;
 }
 
 .scroll-content img {
-    width: 144px;
-      height: auto;
-      margin: 0 10px;
-    }
+    width: 10vw;
+    height: auto;
+    margin: 0 10px;
+    z-index: 0;
+}
 
-
-#footer{
+/* Footer */
+#footer {
     position: absolute;
     bottom: 0;
 }
 
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(calc(-50%));
-      }
-    }
-
-  
-  @keyframes scroll {
+/* Keyframes */
+@keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
-  
+}
 
-@media screen and (max-width:768px) {
-    #title{
-        right:30px;
-        position: sticky;
-        margin: 0 auto;
-        text-align: center;
+@keyframes slide {
+    0% {
+        transform: translateX(0);
     }
-    #title h1{
-        padding-right: 20px;
-        font-family: "Bebas Neue", sans-serif;
-        color: white;
-        text-align: center;
-        text-decoration: underline;
+    50% {
+        transform: translateX(-50%);
     }
-    #portfolio_thumbnail{
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Media Queries 
+@media screen and (max-width: 768px) {
+    #title {
+        position: fixed;
+        top: 10px; 
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%; 
+        z-index: 3; 
+    }
+    #portfolio_thumbnail, #weatherpage_thumbnail {
         width: 250px;
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
     }
-    #weatherpage_thumbnail{
-        width: 250px;
-        height: auto;
-        margin-left:auto;
-        margin-right: auto;
-    }
-    #my_portfolio_card{
-        padding:10px;
+
+    #my_portfolio_card {
+        padding: 10px;
         margin: 50px 0;
         background-color: aliceblue;
         box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.807), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .under-container{
+
+    .under-container {
         position: static;
         z-index: 0;
         background-color: black;
         margin: 0 auto;
         max-height: 200px;
-        min-width: none;
         justify-content: center;
-        padding: 10px 10px;
+        padding: 10px;
     }
-    
+
+    #scrollTitle {
+        width: 144px;
+        height: auto;
+        margin: 0;
+    }
 }
-@keyframes slide { 
-    0% { transform: translateX(0); }
-    50% { transform: translateX(-50%); }
-    100% { transform: translateX(-100%); }
-    
-}
+*/
