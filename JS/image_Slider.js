@@ -1,12 +1,12 @@
 function placeDiv(element, startPosition) {
     let j = 0; // Start movement offset
     const speed = 2; // Pixels per frame
-    const maxOffset = window.screen.width; // Reset after 1000px to prevent overflow
+    const maxOffset = (window.screen.width > 738) ? window.screen.width : 738; // Reset after 1000px to prevent overflow
     let running = true; // Control animation state
     var x = startPosition;
     // Function to move elements
     function animate() {
-        if (!running) return; // Stop animation if paused
+        if (!running) return;
         if (j+x > maxOffset){ j = 0;
                                               x=0;
         } // Reset after reaching maxOffset
@@ -27,9 +27,7 @@ function placeDiv(element, startPosition) {
         requestAnimationFrame(animate); // Continue animation
     }
 
-    // Start animation
     animate();
 
-    // Add event listener to toggle animation (pause/resume on click)
 
 }
