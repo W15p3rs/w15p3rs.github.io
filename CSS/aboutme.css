@@ -129,6 +129,28 @@ html, body {
     font-size: 1.1em;
     
 }
+
+#footer {
+  position: static;
+  margin-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-align: center;
+  z-index: 0;
+
+}
+
+#footer p {
+  margin: auto;
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
 @media screen and (max-width:768px) {
     #title{
         right:30px;
